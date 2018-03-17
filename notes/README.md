@@ -6,9 +6,13 @@ If you want to run it, please type
 ```
 node app.js _command_
 ```
+And the Note will store in file 'list.json'
 
 ## Type of command
-1. create
-	-t 'Your Note Title'		 --- demand
-	-b 'Your Note Body'			 --- demand
-2. read 
+### create
+	-t 'Your Note Title'		 	--- demand
+	-b 'Your Note Body'		 	--- demand
+### read
+	-t 'The Note Title you want to read'	--- demand
+### delete
+	-t 'The Note Title you want to delete'	--- demand
