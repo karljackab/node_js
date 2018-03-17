@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel='stylesheet' href='/css/styles.css'>
+	</head>
+	<body>
+		<sidebar>
+			<H1 id='title'>Chat App</H1>
+			<div id='users'></div>
+		</sidebar>
+
+		<content>
+			<ul id="messages" class='content'></ul>
+
+			<footer class='content'>
+				<form id='message-form'>
+					<input id="in" name='message' type='text' placeholder="Say something" autofocus autocomplete='off'/>
+					<button id='send-buton' class="btn btn-info">Go!</button>
+				</form>
+				<button id='send-location' class="btn btn-info">Send Location~</button>
+			</footer>
+		</content>
+
+		<script id='message-template' type='text/template'>
+			<li>
+				<div class='title'>
+					<h4>{{from}}</h4>
+					<span>{{createdAt}}</span>
+				</div>
+				<div class='text'>
+					<p>{{text}}</p>
+				</div>
+			</li>
+		</script>
+
+		<script id='geo-template' type='text/template'>
+			<li>
+				<div class='title'>
+					<h4>{{from}}</h4>
+					<span>{{createdAt}}</span>
+				</div>
+				<div class='text'>
+					<p><a href={{url}} target='_blank'>{{lat}},{{long}}</a></p>
+				</div>
+			</li>
+		</script>
+
+		<script src='./js/libs/jquery-3.3.1.min.js'></script>
+		<script src="/js/libs/moment.js"></script>
+		<script src='/js/libs/mustache.js'></script>
+		<script src="./socket.io/socket.io.js"></script>
+		<script src='./js/chat.js'></script>
+		<script src='./js/libs/deparam.js'></script>
+	</body>
+</html>

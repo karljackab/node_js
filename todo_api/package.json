@@ -1,0 +1,22 @@
+{
+  "name": "todo_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon ./server/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.1.1",
+    "lodash": "^4.17.4",
+    "mongodb": "^3.0.1",
+    "mongoose": "^5.0.1",
+    "nodemon": "^1.14.11",
+    "validator": "^9.3.0"
+  }
+}

@@ -1,0 +1,137 @@
+header{
+	/* background-color: #3940F9; */
+	height: 62px;
+	line-height: 62px;
+	width: 100%;
+	text-align: center;
+}
+
+sidebar{
+	background-image:url('./picture/sidebar.png');
+	position: fixed;
+	left: 0px;
+	width: 20%;
+	height: 100%;
+}
+
+.login_form{
+	position: absolute;
+	width: 300px;
+	height: 400px;
+	top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    margin:auto;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px;
+    background-color: #1A237E;
+}
+
+.form{
+	position: absolute;
+	width: 250px;
+	height: 320px;
+	top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    margin:auto;
+}
+
+.form-field{
+	position: relative;
+	width: 250px;
+	height: 100px;
+	top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    margin:auto;
+    text-align: center;
+    color: #B2EBF2;
+    font-size: 24px;
+}
+
+.login{
+	margin: 0;
+	padding: 0;
+	background: url('./picture/background.jpg') center center fixed no-repeat;
+	background-size: cover;
+}
+
+.content{
+	margin: 0px;
+	background-image: url('./picture/1.jpg');
+	background-size:cover;
+}
+
+footer{
+	width: 80%;
+	height: 60px;
+	float: right;
+	left: 20%;
+	bottom: 0px;
+	margin-left: 15px;
+}
+
+.title h4{
+	display: inline;
+	font-weight: bold;
+}
+
+.title span{
+	margin-left: 3px;
+	font-size: 15px;
+	width: auto;
+	height: auto;
+	color: gray;
+}
+
+.text{	
+	margin-left: 20px;
+}
+
+.btn{
+	margin-left: 5px;
+}
+#users li{
+	margin: 10px;
+	width: 200px;
+	height: 25px;
+	color: #F7607B;
+/* 	color: #3A3C85;
+	background-color: #F7607B; */
+	border-radius: 10px;
+	font-size: 25px;
+	text-overflow : ellipsis;
+	list-style-type: square;
+	letter-spacing: 1px;
+}
+
+#title{
+	color: #E0F7FA;
+	margin: 10px;
+}
+
+#send-location{
+	position: absolute;
+}
+
+#messages{
+	float: right;
+	width: 80%;
+	height: 575px;
+	overflow: auto;
+	margin-top: 5px;
+	list-style-type:none;
+}
+
+#in{
+	width: 810px;
+}
+
+#message-form{
+	margin-left: 10px;
+	display:inline;
+}
