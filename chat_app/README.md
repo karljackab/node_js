@@ -2,7 +2,7 @@
 
 This is a practice of socket.io in the [Udemy course](https://www.udemy.com/the-complete-nodejs-developer-course-2/)
 
-If you want to run it, please just type
+If you want to run it, please type
 ```
 npm start
 ```
