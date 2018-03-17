@@ -32,15 +32,14 @@ if (argv._[0] === 'create')
 {
     var res = note.create(argv.title,argv.body);
     if (res === true)
-        console.log(`${argv.title}:\t${argv.body}\ncreated successfully`);
+        console.log(`${argv.title}: ${argv.body}\ncreated successfully`);
 }
 else if (argv._[0] === 'read')
 {
     notes = note.read(argv.title);
     console.log('===============\nNotes\n===============');
     notes.forEach((note) => {
-    	debugger;
-        console.log(`${note.title}:\t${note.body}`);
+        console.log(`${note.title}: ${note.body}`);
     })
     console.log('===============');
 }
